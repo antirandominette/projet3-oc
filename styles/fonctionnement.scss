@@ -1,0 +1,44 @@
+@import 'header.scss';
+
+#fonctionnement-section {
+    margin-top: 40px;
+}
+
+#steps-container {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #f6f6f6;
+        width: 320px;
+        height: 70px;
+        position: relative;
+        border-radius: 15px;
+
+        .step-number {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #9356dc;
+            color: #fff;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            position: absolute;
+            left: -10px;
+        }
+
+        .step-logo {
+            margin-right: 15px;
+        }
+
+        p {
+            font-weight: 700;
+        }
+    }
+}
