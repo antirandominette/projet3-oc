@@ -14,9 +14,7 @@
     align-items: center;
     flex-direction: column;
 
-
-
-    div {
+    article {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -47,10 +45,17 @@
             left: 35px;
         }
 
+        .fa-store {
+            color: $primary-color;
+        }
+
         p {
             position: absolute;
             left: 70px;
             font-weight: 700;
         }
+    }
+    article:last-of-type {
+        background-color: $quinary-color;
     }
 }

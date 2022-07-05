@@ -12,7 +12,7 @@
   align-items: center;
   flex-direction: column;
 }
-#steps-container div {
+#steps-container article {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -24,7 +24,7 @@
   margin-bottom: 25px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 5px 9px 2px;
 }
-#steps-container div .step-number {
+#steps-container article .step-number {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -36,14 +36,20 @@
   position: absolute;
   left: -10px;
 }
-#steps-container div .step-logo {
+#steps-container article .step-logo {
   position: absolute;
   left: 35px;
 }
-#steps-container div p {
+#steps-container article .fa-store {
+  color: #9356DC;
+}
+#steps-container article p {
   position: absolute;
   left: 70px;
   font-weight: 700;
+}
+#steps-container article:last-of-type {
+  background-color: #F5EDFF;
 }
 
 /*# sourceMappingURL=fonctionnement.css.map */
