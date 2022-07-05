@@ -1,7 +1,4 @@
-// font-family: 'Roboto', sans-serif;
-// font-family: 'Shrikhand', cursive;
-
-
+@import './helpers.scss';
 
 #logo-container {
     display: flex;
@@ -30,7 +27,7 @@
 }
 
 #explore {
-    background: #F6F6F6;
+    background: $quaternary-color;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -42,6 +39,7 @@
     }
     p {
         color: rgba(0, 0, 0, 0.7);
+        margin: 0 40px;
     }
     button {
         width: 250px;
@@ -51,7 +49,7 @@
         border-radius: 30px;
         padding: 10px 20px;
         color: #fff;
-        background: linear-gradient(#FF79DA, #9356DC);
+        background: linear-gradient($secondary-color, $primary-color);
         font-size: 18px;
         font-weight: 600;
     }
@@ -59,5 +57,5 @@
 
 * {
     margin: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: $roboto-font;
 }

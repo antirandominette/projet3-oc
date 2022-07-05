@@ -1,0 +1,49 @@
+#fonctionnement-section {
+  margin-top: 40px;
+}
+#fonctionnement-section h1 {
+  margin-left: 15px;
+}
+
+#steps-container {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#steps-container div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #F6F6F6;
+  width: 320px;
+  height: 70px;
+  position: relative;
+  border-radius: 15px;
+  margin-bottom: 25px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 5px 9px 2px;
+}
+#steps-container div .step-number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #9356DC;
+  color: #fff;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  position: absolute;
+  left: -10px;
+}
+#steps-container div .step-logo {
+  position: absolute;
+  left: 35px;
+}
+#steps-container div p {
+  position: absolute;
+  left: 70px;
+  font-weight: 700;
+}
+
+/*# sourceMappingURL=fonctionnement.css.map */

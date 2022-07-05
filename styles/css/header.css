@@ -36,6 +36,7 @@
 }
 #explore p {
   color: rgba(0, 0, 0, 0.7);
+  margin: 0 40px;
 }
 #explore button {
   width: 250px;
@@ -53,4 +54,6 @@
 * {
   margin: 0;
   font-family: "Roboto", sans-serif;
-}/*# sourceMappingURL=header.css.map */
+}
+
+/*# sourceMappingURL=header.css.map */

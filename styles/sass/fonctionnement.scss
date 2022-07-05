@@ -1,7 +1,10 @@
-@import 'header.scss';
+@import 'helpers.scss';
 
 #fonctionnement-section {
     margin-top: 40px;
+    h1 {
+        margin-left: 15px;
+    }
 }
 
 #steps-container {
@@ -10,21 +13,27 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
+
+
     div {
         display: flex;
         justify-content: center;
         align-items: center;
-        background: #f6f6f6;
+        background: $quaternary-color;
         width: 320px;
         height: 70px;
         position: relative;
         border-radius: 15px;
+        margin-bottom: 25px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 5px 9px 2px;
+        
 
         .step-number {
             display: flex;
             justify-content: center;
             align-items: center;
-            background: #9356dc;
+            background: $primary-color;
             color: #fff;
             width: 25px;
             height: 25px;
@@ -34,10 +43,13 @@
         }
 
         .step-logo {
-            margin-right: 15px;
+            position: absolute;
+            left: 35px;
         }
 
         p {
+            position: absolute;
+            left: 70px;
             font-weight: 700;
         }
     }
