@@ -24,8 +24,7 @@
         position: relative;
         border-radius: 15px;
         margin-bottom: 25px;
-        box-shadow: rgba(100, 100, 111, 0.2) 0px 5px 9px 2px;
-        
+        @include box-shadow;
 
         .step-number {
             display: flex;

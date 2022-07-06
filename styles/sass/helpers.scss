@@ -4,9 +4,12 @@ $tertiary-color: #99E2D0;
 $quaternary-color: #F6F6F6;
 $quinary-color: #F5EDFF;
 
-
 $title-font-size: 28px;
 $p-font-size: 18px;
 
 $roboto-font: 'Roboto', sans-serif;
 $shrikhand-font: 'Shrikhand', cursive;
+
+@mixin box-shadow {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 5px 9px 2px;
+}
