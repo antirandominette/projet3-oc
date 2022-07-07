@@ -32,38 +32,54 @@
 
 .card-description {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     padding-left: 15px;
     height: 70px;
-    position: relative;
 
-    i {
-        display: flex;
-        align-items: center;
-        position: absolute;
-        right: 30px;
-        top: 35%;
+    .fav-btn {
+        order: 2;
+        margin-right: 20px;
+        position: relative;
+        height: 50px;
+        width: 50px;
 
-        height: 20px;
+        i {
+            position: absolute;
+            top: 50%;  /* position the top  edge of the element at the middle of the parent */
+            left: 50%; /* position the left edge of the element at the middle of the parent */
+        
+            transform: translate(-50%, -50%);
+        }
 
+        .fa-heart {
+            transition: .2s ease-in-out;
+        }
+
+        .fa-regular.fa-heart {
+            opacity: 1;
+        }
+        .fa-solid.fa-heart {
+            opacity: 0; 
+        }
+
+        .fa-solid.fa-heart::before {
+            background: -webkit-gradient(linear, left top, left bottom, from($primary-color), to($secondary-color));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: initial
+        }
     }
+    .fav-btn:hover {
+        .fa-solid.fa-heart {
+            opacity: 1;
+        }
 
-
-    .fa-solid.fa-heart {
-        opacity: 0;
-    }
-    .fa-solid.fa-heart:hover {
-        opacity: 1;
-        font-size: 22px;
-        background:-moz-linear-gradient(top, $primary-color 0%, $secondary-color  100%); 
-        background: -webkit-linear-gradient(top, $primary-color 0%, $secondary-color 100%); 
-        background: linear-gradient(to bottom, $primary-color 0%, $secondary-color  100%);
-        -webkit-background-clip: text;
-        -moz-background-clip: text;
-        background-clip: text;
-        -webkit-text-fill-color:transparent;
-
-        transition: all .2s ease-in-out;
+        
+        .fa-regular.fa-heart {
+            opacity: 0;
+        }
     }
 }
