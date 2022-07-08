@@ -52,6 +52,13 @@
         background: linear-gradient($secondary-color, $primary-color);
         font-size: 18px;
         font-weight: 600;
+
+        transition: all .2s ease-in-out;
+    }
+    button:hover {
+        cursor: pointer;
+        @include box-shadow;
+        transform: translateY(-3px);
     }
 }
 

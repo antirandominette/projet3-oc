@@ -20,6 +20,8 @@
 
     width: 90%;
     border-radius: 15px;
+    position: relative;
+
 
     img {
         width: 100%;
@@ -27,6 +29,23 @@
         object-fit: cover;
 
         border-radius: 15px 15px 0 0;
+    }
+
+    .new-menu {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+
+        width: fit-content;
+        height: fit-content;
+
+        padding: 5px 15px;
+
+        background: #99E2D0;
+        color: #007F5D;
+        font-weight: 500;
+
+        border-radius: 2px;
     }
 }
 
@@ -42,8 +61,8 @@
         order: 2;
         margin-right: 20px;
         position: relative;
-        height: 50px;
-        width: 50px;
+        height: 25px;
+        width: 25px;
 
         i {
             position: absolute;

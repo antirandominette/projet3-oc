@@ -13,3 +13,17 @@ $shrikhand-font: 'Shrikhand', cursive;
 @mixin box-shadow {
     box-shadow: rgba(100, 100, 111, 0.2) 0px 5px 9px 2px;
 }
+
+// #loading-spinner {
+//     position:fixed;
+//     background: #fff;
+//     width: 100vw;
+//     height: 100vh;
+//     animation: fade 1s forwards;
+// }
+
+// @keyframes fade {
+//     to {
+//         opacity: 0;
+//     }
+// }
