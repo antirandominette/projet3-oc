@@ -36,6 +36,10 @@
   border-radius: 2px;
 }
 
+.restaurant-card:last-of-type {
+  margin-bottom: 100px;
+}
+
 .card-description {
   display: flex;
   flex-direction: row;

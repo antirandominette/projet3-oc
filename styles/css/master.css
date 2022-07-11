@@ -1,5 +1,8 @@
 @import url(./helpers.css);
-@import url(./header.css);
-@import url(./main.css);
-@import url(./fonctionnement.css);
-@import url(./restaurants.css);
+@import url(./indexStyles/header.css);
+@import url(./indexStyles/main.css);
+@import url(./indexStyles/fonctionnement.css);
+@import url(./indexStyles/restaurants.css);
+@import url(./indexStyles/footer.css);
+
+@import url(./menusStyles/main.css);

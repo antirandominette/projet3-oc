@@ -1,4 +1,4 @@
-@import 'helpers.scss';
+@import '../helpers.scss';
 
 #restaurant-section {
     h1 {
@@ -47,6 +47,10 @@
 
         border-radius: 2px;
     }
+}
+
+.restaurant-card:last-of-type {
+    margin-bottom: 100px;
 }
 
 .card-description {
