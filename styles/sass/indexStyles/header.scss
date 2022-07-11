@@ -1,0 +1,68 @@
+@import '../helpers.scss';
+
+#logo-container {
+    display: flex;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 15px 10px -10px;
+    padding: 20px 0 10px 0;
+    img {
+        width: 200px;
+    }
+}
+
+#city-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    background: rgba(97, 97, 97, 0.1);
+
+    span {
+        margin-right: 15px;
+    }
+
+    p {
+        font-weight: 500;
+    }
+}
+
+#explore {
+    background: $quaternary-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    height: 350px;
+    h1 {
+        margin: 30px 30px 10px;
+    }
+    p {
+        color: rgba(0, 0, 0, 0.7);
+        margin: 0 40px;
+    }
+    button {
+        width: 250px;
+        height: 60px;
+        margin-top: 30px;
+        border-style: none;
+        border-radius: 30px;
+        padding: 10px 20px;
+        color: #fff;
+        background: linear-gradient($secondary-color, $primary-color);
+        font-size: 18px;
+        font-weight: 600;
+
+        transition: all .2s ease-in-out;
+    }
+    button:hover {
+        cursor: pointer;
+        @include box-shadow;
+        transform: translateY(-3px);
+    }
+}
+
+* {
+    margin: 0;
+    font-family: $roboto-font;
+}

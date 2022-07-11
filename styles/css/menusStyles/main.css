@@ -1,0 +1,73 @@
+header {
+  position: relative;
+}
+header #menu-img {
+  width: 100%;
+  position: absolute;
+}
+
+#menu-section {
+  background: #F6F6F6;
+  position: relative;
+  margin-top: 260px;
+  border-radius: 40px 40px 0 0;
+}
+
+#restaurant-name {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 20px;
+}
+#restaurant-name h1 {
+  font-family: "Shrikhand", cursive;
+  font-weight: 400;
+  font-size: 34px;
+}
+#restaurant-name i {
+  padding-right: 40px;
+}
+
+.menu-section-title {
+  padding: 0 20px;
+  font-weight: 300;
+  font-size: 22px;
+  text-transform: uppercase;
+}
+
+.section-title-separator {
+  width: 55px;
+  margin: 5px 20px;
+  border-bottom: #99e2d0 5px solid;
+}
+
+#entrees-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.mg-bottom {
+  margin-bottom: 40px;
+}
+
+.menu-item {
+  width: 95%;
+  background: #fff;
+  border-radius: 15px;
+  margin: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 5px 9px 2px;
+  padding: 15px 0;
+}
+.menu-item h3 {
+  padding: 5px 20px;
+  font-size: 22px;
+}
+.menu-item .price {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+/*# sourceMappingURL=main.css.map */

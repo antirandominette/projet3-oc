@@ -1,0 +1,65 @@
+#logo-container {
+  display: flex;
+  justify-content: center;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 15px 10px -10px;
+  padding: 20px 0 10px 0;
+}
+#logo-container img {
+  width: 200px;
+}
+
+#city-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  background: rgba(97, 97, 97, 0.1);
+}
+#city-container span {
+  margin-right: 15px;
+}
+#city-container p {
+  font-weight: 500;
+}
+
+#explore {
+  background: #F6F6F6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  height: 350px;
+}
+#explore h1 {
+  margin: 30px 30px 10px;
+}
+#explore p {
+  color: rgba(0, 0, 0, 0.7);
+  margin: 0 40px;
+}
+#explore button {
+  width: 250px;
+  height: 60px;
+  margin-top: 30px;
+  border-style: none;
+  border-radius: 30px;
+  padding: 10px 20px;
+  color: #fff;
+  background: linear-gradient(#FF79DA, #9356DC);
+  font-size: 18px;
+  font-weight: 600;
+  transition: all 0.2s ease-in-out;
+}
+#explore button:hover {
+  cursor: pointer;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 5px 9px 2px;
+  transform: translateY(-3px);
+}
+
+* {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+/*# sourceMappingURL=header.css.map */

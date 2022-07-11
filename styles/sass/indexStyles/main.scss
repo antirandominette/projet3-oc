@@ -1,0 +1,14 @@
+@import '../helpers.scss';
+
+h1 {
+    font-size: $title-font-size;
+}
+
+p {
+    font-size: $p-font-size;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
