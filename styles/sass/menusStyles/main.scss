@@ -1,5 +1,7 @@
 @import '../helpers.scss';
 
+@include default-btn;
+
 header {
     position: relative;
     #menu-img {
@@ -14,6 +16,10 @@ header {
     position: relative;
     margin-top: 260px;
     border-radius: 40px 40px 0 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #restaurant-name {
@@ -59,7 +65,7 @@ header {
 
 
 .menu-item {
-    width: 95%;
+    width: 100%;
     background: #fff;
     border-radius: 15px;
     margin: 10px;
@@ -76,4 +82,8 @@ header {
 
         padding: 0 20px;
     }
+}
+
+#order-btn {
+    margin-bottom: 90px;
 }

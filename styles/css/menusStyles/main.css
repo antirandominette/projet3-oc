@@ -1,3 +1,17 @@
+button {
+  width: 250px;
+  height: 60px;
+  margin-top: 30px;
+  border-style: none;
+  border-radius: 30px;
+  padding: 10px 20px;
+  color: #fff;
+  background: linear-gradient(#FF79DA, #9356DC);
+  font-size: 18px;
+  font-weight: 600;
+  transition: all 0.2s ease-in-out;
+}
+
 header {
   position: relative;
 }
@@ -11,6 +25,9 @@ header #menu-img {
   position: relative;
   margin-top: 260px;
   border-radius: 40px 40px 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #restaurant-name {
@@ -53,7 +70,7 @@ header #menu-img {
 }
 
 .menu-item {
-  width: 95%;
+  width: 100%;
   background: #fff;
   border-radius: 15px;
   margin: 10px;
@@ -68,6 +85,10 @@ header #menu-img {
   display: flex;
   justify-content: space-between;
   padding: 0 20px;
+}
+
+#order-btn {
+  margin-bottom: 90px;
 }
 
 /*# sourceMappingURL=main.css.map */
