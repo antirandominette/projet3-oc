@@ -28,6 +28,11 @@ $shrikhand-font: 'Shrikhand', cursive;
 
         transition: all .2s ease-in-out;
     }
+    button:hover {
+        cursor: pointer;
+        @include box-shadow;
+        transform: translateY(-3px);
+    }
 }
 
 // #loading-spinner {

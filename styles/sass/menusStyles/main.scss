@@ -2,12 +2,21 @@
 
 @include default-btn;
 
+
+#logo-container {
+    position: relative;
+}
+.fa-arrow-left {
+    position: absolute;
+    left: 30px;
+    top: 50%;
+}
+
 header {
     position: relative;
     #menu-img {
         width: 100%;
         position: absolute;
-        // z-index: -1;
     }
 }
 
@@ -25,16 +34,12 @@ header {
 #restaurant-name {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 30px 20px;
+    padding: 30px 0;
 
     h1 {
         font-family: $shrikhand-font;
         font-weight: 400;
         font-size: 34px;
-    }
-
-    i {
         padding-right: 40px;
     }
 }

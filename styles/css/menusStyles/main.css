@@ -12,6 +12,22 @@ button {
   transition: all 0.2s ease-in-out;
 }
 
+button:hover {
+  cursor: pointer;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 5px 9px 2px;
+  transform: translateY(-3px);
+}
+
+#logo-container {
+  position: relative;
+}
+
+.fa-arrow-left {
+  position: absolute;
+  left: 30px;
+  top: 50%;
+}
+
 header {
   position: relative;
 }
@@ -33,15 +49,12 @@ header #menu-img {
 #restaurant-name {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 30px 20px;
+  padding: 30px 0;
 }
 #restaurant-name h1 {
   font-family: "Shrikhand", cursive;
   font-weight: 400;
   font-size: 34px;
-}
-#restaurant-name i {
   padding-right: 40px;
 }
 
