@@ -33,15 +33,23 @@ header {
 
 #restaurant-name {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    padding: 30px 0;
+    padding: 50px 0;
+    width: 90%;
 
     h1 {
         font-family: $shrikhand-font;
         font-weight: 400;
         font-size: 34px;
-        padding-right: 40px;
+        padding: 0 20px;
     }
+}
+
+#menu-container {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
 }
 
 .menu-section-title {
