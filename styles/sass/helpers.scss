@@ -35,6 +35,12 @@ $shrikhand-font: 'Shrikhand', cursive;
     }
 }
 
+@mixin menu-img {
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
 // #loading-spinner {
 //     position:fixed;
 //     background: #fff;

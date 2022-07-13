@@ -20,6 +20,8 @@ button:hover {
 
 #logo-container {
   position: relative;
+  background: #fff;
+  z-index: 1;
 }
 
 .fa-arrow-left {
@@ -34,6 +36,13 @@ header {
 header #menu-img {
   width: 100%;
   position: absolute;
+  z-index: -1;
+}
+header #menu-img2 {
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  top: -100px;
 }
 
 #menu-section {
