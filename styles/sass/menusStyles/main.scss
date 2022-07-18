@@ -46,7 +46,7 @@ header {
     h1 {
         font-family: $shrikhand-font;
         font-weight: 400;
-        font-size: 34px;
+        font-size: 32px;
         padding: 0 20px;
     }
 }
@@ -72,15 +72,12 @@ header {
     border-bottom: #99e2d0 5px solid;
 }
 
-#entrees-section {
+.menu-section {
+    margin-bottom: 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
-
-.mg-bottom {
-    margin-bottom: 40px;
 }
 
 
@@ -91,16 +88,30 @@ header {
     margin: 10px;
     @include box-shadow;
     padding: 15px 0;
+    display: flex;
 
-    h3 {
+
+    .item-description {
+        background: red;
+        width: 75%;
         padding: 5px 20px;
-        font-size: 22px;
+
+        h3 {
+            font-size: 22px;
+        }
+        p {
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+        }
     }
     .price {
-        display: flex;
-        justify-content: space-between;
-
+        width: fit-content;
+        height: 100%;
+        background: blue;
         padding: 0 20px;
+        display: flex;
+        align-items: center;
     }
 }
 
