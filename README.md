@@ -1,11 +1,10 @@
 # projet3-oc
-Vous venez d’être recruté chez Ohmyfood!, en tant que développeur junior. Félicitations !  Ohmyfood! est une jeune startup qui voudrait s'imposer sur le marché de la restauration. L'objectif est de développer un site 100% mobile qui répertorie les menus de restaurants gastronomiques. En plus des systèmes classiques de réservation, les clients pourront composer le menu de leur repas pour que les plats soient prêts à leur arrivée. Finis, les temps d'attente au restaurant !
+Vous venez d’être recruté chez Ohmyfood!, en tant que développeur junior. 
 
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+Félicitations !  
 
-This is the first version of the website, code is not yet well indented and cleaned of all unnecessary content.
+Ohmyfood! est une jeune startup qui voudrait s'imposer sur le marché de la restauration. 
+L'objectif est de développer un site 100% mobile qui répertorie les menus de restaurants gastronomiques. 
+En plus des systèmes classiques de réservation, les clients pourront composer le menu de leur repas pour que les plats soient prêts à leur arrivée. 
 
-Still learning sass, for now i'm figuring out what i want to do and how to do it by testing in scss files.
-
-
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+Finis, les temps d'attente au restaurant !
