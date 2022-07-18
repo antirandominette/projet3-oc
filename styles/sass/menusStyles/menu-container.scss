@@ -1,0 +1,35 @@
+@import '../helpers.scss';
+
+.menu-item {
+    width: 100%;
+    background: #fff;
+    border-radius: 15px;
+    margin: 10px;
+    @include box-shadow;
+    padding: 15px 0;
+    display: flex;
+
+
+    .item-description {
+        background: red;
+        width: 75%;
+        padding: 5px 20px;
+
+        h3 {
+            font-size: 22px;
+        }
+        p {
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+    }
+    .price {
+        width: fit-content;
+        height: 100%;
+        background: blue;
+        padding: 0 20px;
+        display: flex;
+        align-items: center;
+    }
+}

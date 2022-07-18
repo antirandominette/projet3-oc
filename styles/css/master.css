@@ -1,3 +1,4 @@
+/* IMPORT FOR INDEX.HTML */
 @import url(./helpers.css);
 @import url(./indexStyles/header.css);
 @import url(./indexStyles/main.css);
@@ -5,4 +6,10 @@
 @import url(./indexStyles/restaurants.css);
 @import url(./indexStyles/footer.css);
 
-@import url(./menusStyles/main.css);
+
+/* IMPORT FOR MENU.HTML */
+@import url(./menusStyles/topbar.css);
+@import url(./menusStyles/menu-section.css);
+@import url(./menusStyles/restaurant-name.css);
+@import url(./menusStyles/menu-container.css);
+@import url(./menusStyles/order-btn.css);

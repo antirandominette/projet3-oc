@@ -1,0 +1,24 @@
+@import '../helpers.scss';
+
+#logo-container {
+    position: relative;
+    background: #fff;
+    z-index: 1;
+}
+.fa-arrow-left {
+    position: absolute;
+    left: 30px;
+    top: 50%;
+}
+
+header {
+    position: relative;
+    #menu-img {
+        @include menu-img;
+    }
+    // menu2.html
+    #menu-img2 {
+        @include menu-img;
+        top: -100px;
+    }
+}

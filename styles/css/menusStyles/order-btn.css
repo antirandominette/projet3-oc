@@ -1,0 +1,25 @@
+button {
+  width: 250px;
+  height: 60px;
+  margin-top: 30px;
+  border-style: none;
+  border-radius: 30px;
+  padding: 10px 20px;
+  color: #fff;
+  background: linear-gradient(#FF79DA, #9356DC);
+  font-size: 18px;
+  font-weight: 600;
+  transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+  cursor: pointer;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 5px 9px 2px;
+  transform: translateY(-3px);
+}
+
+#order-btn {
+  margin-bottom: 90px;
+}
+
+/*# sourceMappingURL=order-btn.css.map */

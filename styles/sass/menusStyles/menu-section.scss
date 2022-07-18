@@ -1,0 +1,40 @@
+@import '../helpers.scss';
+
+#menu-section {
+    background: $quaternary-color;
+    position: relative;
+    margin-top: 260px;
+    border-radius: 40px 40px 0 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#menu-container {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+.menu-section-title {
+    padding: 0 20px;
+    font-weight: 300;
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
+.section-title-separator {
+    width: 55px;
+    margin: 5px 20px;
+    border-bottom: #99e2d0 5px solid;
+}
+
+.menu-section {
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+

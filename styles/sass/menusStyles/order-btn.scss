@@ -1,0 +1,7 @@
+@import '../helpers.scss';
+
+@include default-btn;
+
+#order-btn {
+    margin-bottom: 90px;
+}

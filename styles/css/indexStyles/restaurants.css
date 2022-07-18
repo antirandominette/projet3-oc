@@ -23,7 +23,7 @@
   object-fit: cover;
   border-radius: 15px 15px 0 0;
 }
-.restaurant-card .new-menu {
+.restaurant-card .new-indicator {
   position: absolute;
   right: 15px;
   top: 15px;
