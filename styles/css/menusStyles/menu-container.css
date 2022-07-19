@@ -4,29 +4,76 @@
   border-radius: 15px;
   margin: 10px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 5px 9px 2px;
-  padding: 15px 0;
   display: flex;
+  overflow: hidden;
+  position: relative;
+}
+.menu-item p {
+  font-size: 16px;
 }
 .menu-item .item-description {
-  background: red;
-  width: 75%;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+  width: 80%;
   padding: 5px 20px;
-}
-.menu-item .item-description h3 {
-  font-size: 22px;
-}
-.menu-item .item-description p {
-  text-overflow: ellipsis;
-  overflow: hidden;
+  margin: 15px 0;
   white-space: nowrap;
 }
+.menu-item .item-description h3 {
+  font-size: 18px;
+}
 .menu-item .price {
-  width: fit-content;
+  width: 15%;
+  margin: 15px 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+.menu-item .add-to-cart {
+  position: absolute;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+  top: 0;
+  right: -20%;
+  background: #99E2D0;
+  color: #fff;
+  width: 20%;
   height: 100%;
-  background: blue;
-  padding: 0 20px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
   display: flex;
   align-items: center;
+  justify-content: center;
+}
+
+.menu-item:hover p, .menu-item:hover h3 {
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.menu-item:hover .item-description {
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+  width: 58%;
+}
+.menu-item:hover .add-to-cart {
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+  transform: translateX(-90px);
+}
+.menu-item:hover .fa-circle-check {
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+  transform: rotate(360deg);
 }
 
 /*# sourceMappingURL=menu-container.css.map */
