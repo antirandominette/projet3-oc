@@ -66,7 +66,7 @@
   -moz-transition: 0.4s;
   -o-transition: 0.4s;
   transition: 0.4s;
-  transform: translateX(-90px);
+  transform: translateX(-85px);
 }
 .menu-item:hover .fa-circle-check {
   -webkit-transition: 0.4s;
