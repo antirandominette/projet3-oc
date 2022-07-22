@@ -5,6 +5,44 @@
   padding: 50px 0;
   width: 90%;
 }
+#restaurant-name .fav-btn {
+  order: 2;
+  margin-right: 20px;
+  position: relative;
+  height: 25px;
+  width: 25px;
+  cursor: pointer;
+}
+#restaurant-name .fav-btn i {
+  position: absolute;
+  top: 50%; /* position the top  edge of the element at the middle of the parent */
+  left: 50%; /* position the left edge of the element at the middle of the parent */
+  transform: translate(-50%, -50%);
+}
+#restaurant-name .fav-btn .fa-heart {
+  transition: 0.4s ease;
+}
+#restaurant-name .fav-btn .fa-regular.fa-heart {
+  opacity: 1;
+}
+#restaurant-name .fav-btn .fa-solid.fa-heart {
+  position: absolute;
+  left: -3px;
+  transform: scale(0);
+}
+#restaurant-name .fav-btn .fa-solid.fa-heart::before {
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: initial;
+}
+#restaurant-name .fav-btn:hover .fa-solid.fa-heart {
+  transform: scale(1);
+}
+#restaurant-name .fav-btn:hover .fa-regular.fa-heart {
+  opacity: 0;
+}
 #restaurant-name h1 {
   font-family: "Shrikhand", cursive;
   font-weight: 400;

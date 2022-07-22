@@ -8,6 +8,8 @@
     padding: 50px 0;
     width: 90%;
 
+    @include fav-btn-xl;
+    
     h1 {
         font-family: $shrikhand-font;
         font-weight: 400;
