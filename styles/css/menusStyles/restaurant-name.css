@@ -20,7 +20,7 @@
   transform: translate(-50%, -50%);
 }
 #restaurant-name .fav-btn .fa-heart {
-  transition: 0.4s ease;
+  transition: 0.3s ease;
 }
 #restaurant-name .fav-btn .fa-regular.fa-heart {
   opacity: 1;

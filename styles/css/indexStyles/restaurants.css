@@ -63,7 +63,7 @@
   transform: translate(-50%, -50%);
 }
 .card-description .fav-btn .fa-heart {
-  transition: 0.4s ease;
+  transition: 0.3s ease;
 }
 .card-description .fav-btn .fa-regular.fa-heart {
   opacity: 1;

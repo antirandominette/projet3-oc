@@ -9,13 +9,15 @@ button {
   background: linear-gradient(#FF79DA, #9356DC);
   font-size: 18px;
   font-weight: 600;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 5px 9px 2px;
   transition: all 0.2s ease-in-out;
 }
 
 button:hover {
   cursor: pointer;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 5px 9px 2px;
-  transform: translateY(-3px);
+  filter: brightness(1.05);
+  color: rgba(255, 255, 255, 0.9);
+  box-shadow: rgba(100, 100, 111, 0.4) 0px 5px 9px 2px;
 }
 
 #order-btn {

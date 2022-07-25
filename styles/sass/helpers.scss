@@ -25,13 +25,15 @@ $shrikhand-font: 'Shrikhand', cursive;
         background: linear-gradient($secondary-color, $primary-color);
         font-size: 18px;
         font-weight: 600;
+        @include box-shadow;
 
         transition: all .2s ease-in-out;
     }
     button:hover {
         cursor: pointer;
-        @include box-shadow;
-        transform: translateY(-3px);
+        filter: brightness(1.05);
+        color: rgba(255, 255, 255, 0.9);
+        box-shadow: rgba(100, 100, 111, 0.4) 0px 5px 9px 2px;
     }
 }
 
@@ -59,7 +61,7 @@ $shrikhand-font: 'Shrikhand', cursive;
         }
 
         .fa-heart {
-            transition: .4s ease;
+            transition: .3s ease;
         }
 
         .fa-regular.fa-heart {
@@ -109,7 +111,7 @@ $shrikhand-font: 'Shrikhand', cursive;
         }
 
         .fa-heart {
-            transition: .4s ease;
+            transition: .3s ease;
         }
 
         .fa-regular.fa-heart {
@@ -140,6 +142,7 @@ $shrikhand-font: 'Shrikhand', cursive;
         }
     }
 }
+
 // #loading-spinner {
 //     position:fixed;
 //     background: #fff;
