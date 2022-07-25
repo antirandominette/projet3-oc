@@ -11,6 +11,10 @@
 .menu-item p {
   font-size: 16px;
 }
+.menu-item p, .menu-item h3 {
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
 .menu-item .item-description {
   -webkit-transition: 0.4s;
   -moz-transition: 0.4s;
@@ -20,9 +24,14 @@
   padding: 5px 20px;
   margin: 15px 0;
   white-space: nowrap;
+  position: relative;
 }
 .menu-item .item-description h3 {
   font-size: 18px;
+}
+.menu-item .item-description p {
+  margin: 0;
+  width: 95%;
 }
 .menu-item .price {
   width: 15%;
@@ -30,6 +39,14 @@
   display: flex;
   align-items: flex-end;
   justify-content: center;
+  position: absolute;
+  line-height: 27px;
+  right: 0;
+  bottom: 0;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
 }
 .menu-item .add-to-cart {
   position: absolute;
@@ -50,10 +67,6 @@
   justify-content: center;
 }
 
-.menu-item:hover p, .menu-item:hover h3 {
-  text-overflow: ellipsis;
-  overflow: hidden;
-}
 .menu-item:hover .item-description {
   -webkit-transition: 0.4s;
   -moz-transition: 0.4s;
@@ -66,7 +79,7 @@
   -moz-transition: 0.4s;
   -o-transition: 0.4s;
   transition: 0.4s;
-  transform: translateX(-85px);
+  transform: translateX(-100%);
 }
 .menu-item:hover .fa-circle-check {
   -webkit-transition: 0.4s;
@@ -74,6 +87,13 @@
   -o-transition: 0.4s;
   transition: 0.4s;
   transform: rotate(360deg);
+}
+.menu-item:hover .price {
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+  transform: translateX(-130%);
 }
 
 /*# sourceMappingURL=menu-container.css.map */
