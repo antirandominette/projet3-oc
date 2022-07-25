@@ -143,6 +143,13 @@ $shrikhand-font: 'Shrikhand', cursive;
     }
 }
 
+@mixin transition-time {
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -o-transition: .4s;
+    transition: .4s;
+}
+
 // #loading-spinner {
 //     position:fixed;
 //     background: #fff;
