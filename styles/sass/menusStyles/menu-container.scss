@@ -1,6 +1,30 @@
 @import '../helpers.scss';
 
+@keyframes menu-apparition {
+    from {
+        opacity: 0;
+        transform: translateY(60%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.menu-item:nth-of-type(2) {
+    animation-delay: .2s;
+}
+.menu-item:nth-of-type(3) {
+    animation-delay: .4s;
+}
+.menu-item:nth-of-type(4) {
+    animation-delay: .6s;
+}
+
+
 .menu-item {
+    opacity: 0;
+    animation: .8s ease-in-out 0s normal forwards 1 menu-apparition;
     width: 100%;
     background: #fff;
     border-radius: 15px;
