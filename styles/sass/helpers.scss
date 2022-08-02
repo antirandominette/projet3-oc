@@ -10,6 +10,8 @@ $p-font-size: 18px;
 $roboto-font: 'Roboto', sans-serif;
 $shrikhand-font: 'Shrikhand', cursive;
 
+$animation-ended: false;
+
 @mixin box-shadow {
     box-shadow: rgba(100, 100, 111, 0.2) 0px 5px 9px 2px;
 }
@@ -151,16 +153,109 @@ $shrikhand-font: 'Shrikhand', cursive;
 }
 
 
-// #loading-spinner {
-//     position:fixed;
-//     background: #fff;
-//     width: 100vw;
-//     height: 100vh;
-//     animation: fade 1s forwards;
+.loading-container {
+    position: fixed;
+    background: rgba($color: $quaternary-color, $alpha: 1);
+    width: 100vw;
+    height: 100vh;
+    animation: fade 3s forwards;
+    z-index: 2;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h1 {
+        font-size: 47px;
+        font-family: $shrikhand-font;
+    }
+}
+.dots-container {
+    width: 70px;
+    height: 25px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    padding-left: 15px;
+}
+.dot {
+    width: 10px;
+    height: 10px;
+    background-color: $primary-color;
+    border-radius: 10px;
+    animation: dot-animation 1s ease infinite;
+}
+.dot:nth-of-type(2) {
+    background-color: $secondary-color;
+    animation-delay: .4s;
+}
+.dot:nth-of-type(3) {
+    background-color: $tertiary-color;
+    animation-delay: .6s;
+}
+
+
+@keyframes dot-animation {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+
+// .loader {
+//     width: 150px;
+//     height: 150px;
+//     position: relative;
 // }
 
-// @keyframes fade {
-//     to {
-//         opacity: 0;
+// .spinner {
+//     border-radius: 150px;
+//     border: 10px solid rgba($color: $secondary-color, $alpha: .7);
+// }
+// .spinner::after {
+//     content: '';
+//     position: absolute;
+//     top: -10px;
+//     left: -10px;
+//     bottom: -10px;
+//     right: -10px;
+//     border: 10px solid transparent;
+//     border-top-color: $primary-color;
+//     border-radius: 150px;
+//     animation: spin .8s ease-in-out infinite;
+// }
+
+// @keyframes spin {
+//     0% {
+//         transform: rotate(0deg);
+//     }
+//     100% {
+//         transform: rotate(360deg);
 //     }
 // }
+
+@keyframes fade {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    70% {
+        opacity: 1;
+        transform: scale(1);
+
+    }
+    90% {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(0);
+    }
+}
+

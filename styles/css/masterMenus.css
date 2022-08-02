@@ -1,0 +1,8 @@
+
+/* IMPORT FOR MENU.HTML */
+@import url(./helpers.css);
+@import url(./menusStyles/topbar.css);
+@import url(./menusStyles/menu-section.css);
+@import url(./menusStyles/restaurant-name.css);
+@import url(./menusStyles/menu-container.css);
+@import url(./menusStyles/order-btn.css);
