@@ -2,8 +2,7 @@
 
 #menu-section {
     background: $quaternary-color;
-    position: relative;
-    margin-top: 260px;
+    margin-top: 55%;
     border-radius: 40px 40px 0 0;
 
     display: flex;
@@ -18,7 +17,7 @@
 }
 
 .menu-section-title {
-    padding: 0 20px;
+    padding: 0 10px;
     font-weight: 300;
     font-size: 22px;
     text-transform: uppercase;
@@ -26,7 +25,7 @@
 
 .section-title-separator {
     width: 55px;
-    margin: 5px 20px;
+    margin: 5px 10px;
     border-bottom: #99e2d0 5px solid;
 }
 

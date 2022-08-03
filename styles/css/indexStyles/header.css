@@ -1,3 +1,75 @@
+.loading-container {
+  position: fixed;
+  background: #f6f6f6;
+  width: 100vw;
+  height: 100vh;
+  animation: fade 3s forwards;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loading-container h1 {
+  font-size: 47px;
+  font-family: "Shrikhand", cursive;
+}
+
+.dots-container {
+  width: 70px;
+  height: 25px;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  padding-left: 15px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background-color: #9356DC;
+  border-radius: 10px;
+  animation: dot-animation 1s ease infinite;
+}
+
+.dot:nth-of-type(2) {
+  background-color: #FF79DA;
+  animation-delay: 0.4s;
+}
+
+.dot:nth-of-type(3) {
+  background-color: #99E2D0;
+  animation-delay: 0.6s;
+}
+
+@keyframes dot-animation {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+@keyframes fade {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  70% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  90% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0);
+  }
+}
 #logo-container {
   display: flex;
   justify-content: center;
@@ -37,24 +109,6 @@
 #explore p {
   color: rgba(0, 0, 0, 0.7);
   margin: 0 40px;
-}
-#explore button {
-  width: 250px;
-  height: 60px;
-  margin-top: 30px;
-  border-style: none;
-  border-radius: 30px;
-  padding: 10px 20px;
-  color: #fff;
-  background: linear-gradient(#FF79DA, #9356DC);
-  font-size: 18px;
-  font-weight: 600;
-  transition: all 0.2s ease-in-out;
-}
-#explore button:hover {
-  cursor: pointer;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 5px 9px 2px;
-  transform: translateY(-3px);
 }
 
 * {

@@ -1,35 +1,115 @@
 @import '../helpers.scss';
 
+@keyframes menu-apparition {
+    from {
+        opacity: 0;
+        transform: translateY(25%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.menu-item:nth-of-type(2) {
+    animation-delay: .2s;
+}
+.menu-item:nth-of-type(3) {
+    animation-delay: .4s;
+}
+.menu-item:nth-of-type(4) {
+    animation-delay: .6s;
+}
+
 .menu-item {
+    opacity: 0;
+    animation: .8s ease-in-out 0s normal forwards 1 menu-apparition;
     width: 100%;
     background: #fff;
     border-radius: 15px;
     margin: 10px;
     @include box-shadow;
-    padding: 15px 0;
-    display: flex;
 
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    
+    p {
+        font-size: 16px;
+    }
+    p, h3 {
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
 
     .item-description {
-        background: red;
-        width: 75%;
-        padding: 5px 20px;
-
+        width: 80%;
+        // background: red;
+        padding: 5px 10px;
+        margin: 15px 0;
+        white-space: nowrap;
         h3 {
-            font-size: 22px;
+            font-size: 18px;
         }
         p {
-            text-overflow: ellipsis;
-            overflow: hidden;
-            white-space: nowrap;
+            margin: 0;
+            width: 95%;
         }
+        position: relative;
+        @include transition-time;
+
     }
     .price {
-        width: fit-content;
+        width: 15%;
+        margin: 15px 0;
+        // background: green;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        position: absolute;
+        line-height: 27px;
+        right: 0;
+        bottom: 0;
+        @include transition-time;
+
+    }
+    .add-to-cart {
+        position: absolute;
+
+        top: 0;
+        right: -21%;
+
+        background: $tertiary-color;
+        color: #fff;
+        width: 21%;
         height: 100%;
-        background: blue;
-        padding: 0 20px;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+
         display: flex;
         align-items: center;
+        justify-content: center;
+        @include transition-time;
+
+    }
+}
+.menu-item:hover {
+    cursor: pointer;
+    .item-description {
+        @include transition-time;
+    
+        width: 60%;
+    }
+    .add-to-cart {
+        @include transition-time;
+        transform: translateX(-100%);
+    }
+    .fa-circle-check {
+        @include transition-time;
+        transform: rotate(360deg);
+    }
+    .price {
+        @include transition-time;
+        transform: translateX(-130%);
     }
 }

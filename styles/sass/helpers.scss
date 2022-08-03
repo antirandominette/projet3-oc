@@ -10,6 +10,8 @@ $p-font-size: 18px;
 $roboto-font: 'Roboto', sans-serif;
 $shrikhand-font: 'Shrikhand', cursive;
 
+$animation-ended: false;
+
 @mixin box-shadow {
     box-shadow: rgba(100, 100, 111, 0.2) 0px 5px 9px 2px;
 }
@@ -25,13 +27,15 @@ $shrikhand-font: 'Shrikhand', cursive;
         background: linear-gradient($secondary-color, $primary-color);
         font-size: 18px;
         font-weight: 600;
+        @include box-shadow;
 
         transition: all .2s ease-in-out;
     }
     button:hover {
         cursor: pointer;
-        @include box-shadow;
-        transform: translateY(-3px);
+        filter: brightness(1.1);
+        color: rgba(255, 255, 255, 0.8);
+        box-shadow: rgba(100, 100, 111, 0.4) 0px 5px 9px 2px;
     }
 }
 
@@ -41,16 +45,184 @@ $shrikhand-font: 'Shrikhand', cursive;
     z-index: -1;
 }
 
-// #loading-spinner {
-//     position:fixed;
-//     background: #fff;
-//     width: 100vw;
-//     height: 100vh;
-//     animation: fade 1s forwards;
-// }
+@mixin fav-btn {
+    .fav-btn {
+        order: 2;
+        margin-right: 20px;
+        position: relative;
+        height: 25px;
+        width: 25px;
+        cursor: pointer;
 
-// @keyframes fade {
-//     to {
-//         opacity: 0;
-//     }
-// }
+        i {
+            position: absolute;
+            top: 50%;  /* position the top  edge of the element at the middle of the parent */
+            left: 50%; /* position the left edge of the element at the middle of the parent */
+        
+            transform: translate(-50%, -50%);
+        }
+
+        .fa-heart {
+            transition: .3s ease;
+        }
+
+        .fa-regular.fa-heart {
+            opacity: 1;
+        }
+        .fa-solid.fa-heart {
+            position: absolute;
+            left: 1px;
+            transform: scale(0);
+        }
+
+        .fa-solid.fa-heart::before {
+            background: -webkit-gradient(linear, left top, left bottom, from($primary-color), to($secondary-color));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: initial;
+        }
+    }
+    .fav-btn:hover {
+        .fa-solid.fa-heart {
+            transform: scale(1);
+        }
+
+        
+        .fa-regular.fa-heart {
+            opacity: 0;
+        }
+    }
+}
+
+@mixin fav-btn-xl {
+    .fav-btn {
+        order: 2;
+        margin-right: 20px;
+        position: relative;
+        height: 25px;
+        width: 25px;
+        cursor: pointer;
+
+        i {
+            position: absolute;
+            top: 50%;  /* position the top  edge of the element at the middle of the parent */
+            left: 50%; /* position the left edge of the element at the middle of the parent */
+        
+            transform: translate(-50%, -50%);
+        }
+
+        .fa-heart {
+            transition: .3s ease;
+        }
+
+        .fa-regular.fa-heart {
+            opacity: 1;
+        }
+        .fa-solid.fa-heart {
+            position: absolute;
+            left: -3px;
+            transform: scale(0);
+        }
+
+        .fa-solid.fa-heart::before {
+            background: -webkit-gradient(linear, left top, left bottom, from($primary-color), to($secondary-color));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: initial;
+        }
+    }
+    .fav-btn:hover {
+        .fa-solid.fa-heart {
+            transform: scale(1);
+        }
+
+        
+        .fa-regular.fa-heart {
+            opacity: 0;
+        }
+    }
+}
+
+@mixin transition-time {
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -o-transition: .4s;
+    transition: .4s;
+}
+
+
+.loading-container {
+    position: fixed;
+    background: rgba($color: $quaternary-color, $alpha: 1);
+    width: 100vw;
+    height: 100vh;
+    animation: fade 3s forwards;
+    z-index: 2;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h1 {
+        font-size: 47px;
+        font-family: $shrikhand-font;
+    }
+}
+.dots-container {
+    width: 70px;
+    height: 25px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    padding-left: 15px;
+}
+.dot {
+    width: 10px;
+    height: 10px;
+    background-color: $primary-color;
+    border-radius: 10px;
+    animation: dot-animation 1s ease infinite;
+}
+.dot:nth-of-type(2) {
+    background-color: $secondary-color;
+    animation-delay: .4s;
+}
+.dot:nth-of-type(3) {
+    background-color: $tertiary-color;
+    animation-delay: .6s;
+}
+
+
+@keyframes dot-animation {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+@keyframes fade {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    70% {
+        opacity: 1;
+        transform: scale(1);
+
+    }
+    90% {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(0);
+    }
+}
+
